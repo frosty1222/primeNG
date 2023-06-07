@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
 import { CountryService } from '../service/countryservice.service';
+import { SelectItemGroup } from 'primeng/api';
 
 @Component({
     selector: 'autocomplete-template-demo',
@@ -8,15 +8,15 @@ import { CountryService } from '../service/countryservice.service';
     styleUrls: ['./autocomplete-template-demo.scss']
 })
 export class AutocompleteTemplateDemo {
-    countries: any[]  = [];
+    countries!: any[];
 
-    items: any[]  = [];
+    items!: any[];
 
-    groupedCities: SelectItemGroup[]  = [];
+    groupedCities!: SelectItemGroup[];
 
-    selectedCountryAdvanced: any[]  = [];
+    selectedCountryAdvanced!: any[];
 
-    filteredCountries: any[] = [];
+    filteredCountries!: any[];
 
     constructor(private countryService: CountryService) {}
 
